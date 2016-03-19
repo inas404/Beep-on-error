@@ -1,4 +1,4 @@
-# Beep-on-exception
+# Beep-on-error
 This is a simple python template I made to beep on exception and print it out. I needed it mostly when i run a code that might take so long running in the background and it suddenly stops on error and i don't notice till the end. This is justo to alert me.
 
 All you need to do is to import these packages:
@@ -9,7 +9,7 @@ import traceback
 import logging
 ```
 
-Then put your code in a try-exception block:
+Then put your code in a try-except block:
 ```python
 try:
 
@@ -23,3 +23,5 @@ except Exception as e:
 	os.system('play --no-show-progress --null --channels 1 synth %s sine %f' % (1, 1000)) 
 	# 1 is duration per second and 1000 is frequency per hertz
 ```
+
+Finally run the python code and it will beep if any type of error occurs.
