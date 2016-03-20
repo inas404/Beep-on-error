@@ -1,7 +1,13 @@
 # Beep-on-error
 This is a simple python template I made to beep on exception and print it out. I needed it mostly when i run a code that might take so long running in the background and it suddenly stops on error and i don't notice till the end. This is justo to alert me.
 
-All you need to do is to import these packages:
+All you need to do is to install sox:
+
+```bash
+pip install sox
+```
+
+Import these packages:
 
 ```python
 import os
